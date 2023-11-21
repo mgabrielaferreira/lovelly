@@ -7,10 +7,10 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
 namespace ApiLovely.Controllers
-{   
-    [ApiController]
+{
     [Route("[controller]")]
     public class ClienteController : ControllerBase
+    
     {
         private readonly ILogger<ClienteController> _logger;
 
