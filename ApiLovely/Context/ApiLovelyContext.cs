@@ -5,11 +5,11 @@ using System.Threading.Tasks;
 using ApiLovely.Model;
 using Microsoft.EntityFrameworkCore;
 
-namespace ApiLovely.Contex
+namespace ApiLovely.Context
 {
     public class ApiLovelyContex: DbContext
     {
-        public ApiLovelyContex(DbContextOptions options) : base(options) {}
+        public ApiLovelyContext(DbContextOptions options) : base(options) {}
         public DbSet<Cliente> Clientes {get; set; }
 
         public DbSet<Pedido> Pedidos {get; set; }
