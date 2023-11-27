@@ -7,11 +7,10 @@ namespace ApiLovely.Model
 {
     public class Pedido
     {
-        public string Produto { get; set;}
+        public Produto Produto { get; set;}
         public int Valor { get; set;}
-        public int Quatidade {get; set;}
+        public int Quantidade {get; set;}
+        public Cliente Cliente { get; set;}
 
-
-        
     }
 }

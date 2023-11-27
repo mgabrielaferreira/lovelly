@@ -1,23 +1,30 @@
 using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
+using ApiLovely.Model;
+using ApiLovely.Context;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
+using Microsoft.EntityFrameworkCore;
+
 
 namespace ApiLovely.Controllers
-{
-    [Route("[controller]")]
+{  
+    [ApiController]
+    [Route("api/[controller]")]
     public class PedidoController : ControllerBase
+    
     {
         private readonly ILogger<PedidoController> _logger;
 
-        public PedidoController(ILogger<PedidoController> logger)
+        private readonly ApiLovelyContext _context;
+
+        public PedidoController(ILogger<PedidoController> logger, ApiLovelyContext context)
         {
             _logger = logger;
+            _context = context;
         }
 
-       
+        
     }
 }

@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using ApiLovely.Model;
-using ApiLovely.Context;
 using Microsoft.EntityFrameworkCore;
 
 namespace ApiLovely.Context
@@ -17,14 +16,6 @@ namespace ApiLovely.Context
         public DbSet<Pedido> Pedidos {get; set; }
 
         public DbSet<Produto> Produtos {get; set; }
-
-
-
-
-
-        
-
-
 
     }
 }

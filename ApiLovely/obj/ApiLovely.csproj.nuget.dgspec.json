@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Emilly\\OneDrive - Instituto Federal do Rio Grande do Norte\\lovely\\lovelly\\ApiLovely\\ApiLovely.csproj": {}
+    "C:\\Users\\20201034010027\\lovelly-3\\ApiLovely\\ApiLovely.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Emilly\\OneDrive - Instituto Federal do Rio Grande do Norte\\lovely\\lovelly\\ApiLovely\\ApiLovely.csproj": {
+    "C:\\Users\\20201034010027\\lovelly-3\\ApiLovely\\ApiLovely.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Emilly\\OneDrive - Instituto Federal do Rio Grande do Norte\\lovely\\lovelly\\ApiLovely\\ApiLovely.csproj",
+        "projectUniqueName": "C:\\Users\\20201034010027\\lovelly-3\\ApiLovely\\ApiLovely.csproj",
         "projectName": "ApiLovely",
-        "projectPath": "C:\\Users\\Emilly\\OneDrive - Instituto Federal do Rio Grande do Norte\\lovely\\lovelly\\ApiLovely\\ApiLovely.csproj",
-        "packagesPath": "C:\\Users\\Emilly\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Emilly\\OneDrive - Instituto Federal do Rio Grande do Norte\\lovely\\lovelly\\ApiLovely\\obj\\",
+        "projectPath": "C:\\Users\\20201034010027\\lovelly-3\\ApiLovely\\ApiLovely.csproj",
+        "packagesPath": "C:\\Users\\20201034010027\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\20201034010027\\lovelly-3\\ApiLovely\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Emilly\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\20201034010027\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
@@ -40,11 +40,21 @@
           "dependencies": {
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
-              "version": "[7.0.14, )"
+              "version": "[7.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.12, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[7.0.11, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
-              "version": "[6.5.0, )"
+              "version": "[6.4.0, )"
             }
           },
           "imports": [
@@ -66,7 +76,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.404\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }

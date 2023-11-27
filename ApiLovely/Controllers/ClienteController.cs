@@ -1,15 +1,11 @@
 using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
 using ApiLovely.Model;
 using ApiLovely.Context;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Logging;
-using System.Windows.Markup;
 
 namespace ApiLovely.Controllers
 {  
@@ -42,7 +38,7 @@ namespace ApiLovely.Controllers
 
     public ActionResult<Cliente> Get(int id)
     {
-        var cliente = _context.Clientes.FirstOrderDefault(PageActionEndpointConventionBuilder => p.Id ==id);
+        var cliente = _context.Clientes.FirstOrderDefault(p=> p.Id ==id);
             if(cliente is null)
                 return NotFound("Cliente não encontrado.");
             return cliente;
