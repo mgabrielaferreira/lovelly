@@ -12,5 +12,7 @@ namespace ApiLovely.Model
         public int Quantidade {get; set;}
         public Cliente Cliente { get; set;}
 
+        public int Id {get; set;}
+
     }
 }

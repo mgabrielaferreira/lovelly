@@ -1,4 +1,10 @@
+using ApiLovely.Context;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
+
+var connectionString = builder.Configuration.GetConnectionString("PostgreSQL");
+builder.Services.AddDbContext<ApiLovelyContext>(options => options.UseNpgsql(connectionString));
 
 // Add services to the container.
 

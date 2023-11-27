@@ -25,6 +25,15 @@ namespace ApiLovely.Controllers
             _context = context;
         }
 
+    [HttpGet]
+
+        public ActionResult<IEnumerable<Pedido>> Get()
+        {
+                var pedidos = _context.Pedidos.ToList();
+                if(pedidos is null)
+                    return NotFound();
+                    
+                return pedidos;}
         
     }
 }
