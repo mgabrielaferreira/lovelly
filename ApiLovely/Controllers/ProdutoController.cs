@@ -39,7 +39,7 @@ namespace ApiLovely.Controllers
 
         public ActionResult<Produto> Get(int id)
         {
-            var produto = _context.Produtos.FirstOrDefault(p=> p.Id ==id);
+            var produto = _context.Produtos.FirstOrDefault(p=> p.ProdutoId ==id);
                 if(produto is null)
                     return NotFound("Produto não encontrado no estoque.");
                 return produto;
