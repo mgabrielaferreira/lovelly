@@ -7,14 +7,23 @@ using Microsoft.EntityFrameworkCore;
 
 namespace ApiLovely.Context
 {
-    public class ApiLovelyContex: DbContext
+    public class ApiLovelyContext: DbContext
     {
-        public ApiLovelyContext(DbContextOptions options) : base(options) {}
+
+        public ApiLovely(DbContextOptions options) : base(options) {}
         public DbSet<Cliente> Clientes {get; set; }
 
         public DbSet<Pedido> Pedidos {get; set; }
 
-        public DbSet<Produto> Produtos  {get; set; }
+        public DbSet<Produto> Produtos {get; set; }
+
+
+
+
+
+        
+
+
 
     }
 }
