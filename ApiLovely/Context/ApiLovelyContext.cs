@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using ApiLovely.Model;
+using ApiLovely.Context;
 using Microsoft.EntityFrameworkCore;
 
 namespace ApiLovely.Context
@@ -10,7 +11,7 @@ namespace ApiLovely.Context
     public class ApiLovelyContext: DbContext
     {
 
-        public ApiLovely(DbContextOptions options) : base(options) {}
+        public ApiLovelyContext(DbContextOptions options) : base(options) {}
         public DbSet<Cliente> Clientes {get; set; }
 
         public DbSet<Pedido> Pedidos {get; set; }
