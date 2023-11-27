@@ -7,7 +7,7 @@ namespace ApiLovely.Model
 {
     public class Produto
     {
-        public float Preco {get; set;}
+        public decimal Preco {get; set;}
 
         public string Categoria {get;set;}
 

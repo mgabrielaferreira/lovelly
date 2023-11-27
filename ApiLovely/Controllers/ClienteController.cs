@@ -38,7 +38,7 @@ namespace ApiLovely.Controllers
 
     public ActionResult<Cliente> Get(int id)
     {
-        var cliente = _context.Clientes.FirstOrderDefault(p=> p.Id ==id);
+        var cliente = _context.Clientes.FirstOrDefault(p=> p.Id ==id);
             if(cliente is null)
                 return NotFound("Cliente não encontrado.");
             return cliente;
@@ -67,7 +67,7 @@ namespace ApiLovely.Controllers
     }
     [HttpDelete]
     public ActionResult Delete(int id){
-        var cliente = _context.Clientes.FirstOrderDefault(p=> p.Id == id);
+        var cliente = _context.Clientes.FirstOrDefault(p=> p.Id == id);
 
         if(cliente is null)
             return NotFound();
