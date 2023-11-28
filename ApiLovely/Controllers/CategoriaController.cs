@@ -8,6 +8,7 @@ using ApiLovely.Context;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
+namespace ApiLovely.Controllers
 {  
     [ApiController]
     [Route("api/[controller]")]

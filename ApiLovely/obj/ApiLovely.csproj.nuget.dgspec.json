@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\david\\lovelly-4\\ApiLovely\\ApiLovely.csproj": {}
+    "C:\\Users\\20201034010029\\lovely\\lovelly\\ApiLovely\\ApiLovely.csproj": {}
   },
   "projects": {
-    "C:\\Users\\david\\lovelly-4\\ApiLovely\\ApiLovely.csproj": {
+    "C:\\Users\\20201034010029\\lovely\\lovelly\\ApiLovely\\ApiLovely.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\david\\lovelly-4\\ApiLovely\\ApiLovely.csproj",
+        "projectUniqueName": "C:\\Users\\20201034010029\\lovely\\lovelly\\ApiLovely\\ApiLovely.csproj",
         "projectName": "ApiLovely",
-        "projectPath": "C:\\Users\\david\\lovelly-4\\ApiLovely\\ApiLovely.csproj",
-        "packagesPath": "C:\\Users\\david\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\david\\lovelly-4\\ApiLovely\\obj\\",
+        "projectPath": "C:\\Users\\20201034010029\\lovely\\lovelly\\ApiLovely\\ApiLovely.csproj",
+        "packagesPath": "C:\\Users\\20201034010029\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\20201034010029\\lovely\\lovelly\\ApiLovely\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\david\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\20201034010029\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
@@ -46,7 +46,7 @@
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[7.0.12, )"
+              "version": "[7.0.14, )"
             },
             "Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",
@@ -76,7 +76,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }
