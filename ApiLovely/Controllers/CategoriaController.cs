@@ -3,30 +3,25 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
+using ApiLovely.Model;
+using ApiLovely.Context;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
+using Microsoft.EntityFrameworkCore;
 
-namespace ApiLovely.Controllers
-{
-    [Route("[controller]")]
-    public class CategoriaController : Controller
+{  
+    [ApiController]
+    [Route("api/[controller]")]
+     public class CategoriaController : ControllerBase
+    
     {
         private readonly ILogger<CategoriaController> _logger;
 
-        public CategoriaController(ILogger<CategoriaController> logger)
+        private readonly ApiLovelyContext _context;
+
+        public CategoriaController(ILogger<CategoriaController> logger, ApiLovelyContext context)
         {
             _logger = logger;
-        }
-
-        public IActionResult Index()
-        {
-            return View();
-        }
-
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View("Error!");
+            _context = context;
         }
     }
 }

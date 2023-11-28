@@ -10,7 +10,7 @@ namespace ApiLovely.Model
         public int ProdutoId {get; set;}
         public decimal Preco {get; set;}
 
-        public string Categoria {get;set;}
+        public string Categoria { get; set;}
 
         public string Descricao {get; set;}
     }
