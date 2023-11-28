@@ -35,7 +35,7 @@ namespace ApiLovely.Controllers
                     
                 return produtos;
         }
-        [HttpGet ("(id:int)", Name="GetPedido")]
+        [HttpGet ("(id:int)", Name="GetProduto")]
 
         public ActionResult<Produto> Get(int id)
         {
