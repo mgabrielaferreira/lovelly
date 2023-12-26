@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using ApiLovely.Migrations;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ApiLovely.Controllers
@@ -14,7 +15,7 @@ namespace ApiLovely.Controllers
         private readonly UserManager<IdentityUser> _userManager;
         private readonly SignInManager<IdentityUser> _signInManager;
 
-        public AutorizaController(UserManager<identityUser> userManager,
+        public AutorizaController(UserManager<IdentityUser> userManager,
         SignInManager<IdentityUser> signInManager)
         {
             _userManager = userManager;
