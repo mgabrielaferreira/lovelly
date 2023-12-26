@@ -1612,19 +1612,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\20201034010027\\.nuget\\packages\\": {}
+    "C:\\Users\\20201034010029\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\20201034010027\\lovelly-5\\Apilovely\\ApiLovely.csproj",
+      "projectUniqueName": "C:\\Users\\20201034010029\\Documents\\lovely\\lovelly-1\\ApiLovely\\ApiLovely.csproj",
       "projectName": "ApiLovely",
-      "projectPath": "C:\\Users\\20201034010027\\lovelly-5\\Apilovely\\ApiLovely.csproj",
-      "packagesPath": "C:\\Users\\20201034010027\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\20201034010027\\lovelly-5\\Apilovely\\obj\\",
+      "projectPath": "C:\\Users\\20201034010029\\Documents\\lovely\\lovelly-1\\ApiLovely\\ApiLovely.csproj",
+      "packagesPath": "C:\\Users\\20201034010029\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\20201034010029\\Documents\\lovely\\lovelly-1\\ApiLovely\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\20201034010027\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\20201034010029\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
