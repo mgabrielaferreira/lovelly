@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\20201034010027\\lovelly-5\\ApiLovely\\ApiLovely.csproj": {}
+    "C:\\Users\\20201034010027\\lovelly-5\\Apilovely\\ApiLovely.csproj": {}
   },
   "projects": {
-    "c:\\Users\\20201034010027\\lovelly-5\\ApiLovely\\ApiLovely.csproj": {
+    "C:\\Users\\20201034010027\\lovelly-5\\Apilovely\\ApiLovely.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\20201034010027\\lovelly-5\\ApiLovely\\ApiLovely.csproj",
+        "projectUniqueName": "C:\\Users\\20201034010027\\lovelly-5\\Apilovely\\ApiLovely.csproj",
         "projectName": "ApiLovely",
-        "projectPath": "c:\\Users\\20201034010027\\lovelly-5\\ApiLovely\\ApiLovely.csproj",
+        "projectPath": "C:\\Users\\20201034010027\\lovelly-5\\Apilovely\\ApiLovely.csproj",
         "packagesPath": "C:\\Users\\20201034010027\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\20201034010027\\lovelly-5\\ApiLovely\\obj\\",
+        "outputPath": "C:\\Users\\20201034010027\\lovelly-5\\Apilovely\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\20201034010027\\AppData\\Roaming\\NuGet\\NuGet.Config",
