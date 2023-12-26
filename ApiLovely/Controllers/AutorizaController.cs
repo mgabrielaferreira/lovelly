@@ -86,7 +86,7 @@ namespace ApiLovely.Controllers
         
         await _signInManager.SignInAsync(user, false);
         //return Ok(GerarToken(model));
-        return Ok();
+        return Ok(GeraToken(model));
 
     
         }
@@ -96,7 +96,7 @@ namespace ApiLovely.Controllers
             isPersistent: false,lockoutOnFailure : false);
 
             if(result.Succeeded)
-               return Ok();
+               return Ok(GeraToken(userInfo));
             else{
                 ModelState.AddModelError(string.Empty, "Login Inválido...");
                 return BadRequest(ModelState);
