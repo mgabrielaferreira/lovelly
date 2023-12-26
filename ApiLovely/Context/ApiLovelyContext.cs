@@ -4,10 +4,11 @@ using System.Linq;
 using System.Threading.Tasks;
 using ApiLovely.Model;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 
 namespace ApiLovely.Context
 {
-    public class ApiLovelyContext: DbContext
+    public class ApiLovelyContext: IdentityDbContext
     {
 
         public ApiLovelyContext(DbContextOptions options) : base(options) {}
