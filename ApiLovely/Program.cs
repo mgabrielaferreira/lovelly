@@ -3,24 +3,29 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.JSInterop.Infrastructure;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
 var connectionString = builder.Configuration.GetConnectionString("PostgreSQL");
 builder.Services.AddDbContext<ApiLovelyContext>(options => options.UseNpgsql(connectionString));
+
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
-       .AddJwtBearer(options => 
-        options.TokenValidationParameters = new TokenValidationParameters{
+    .AddJwtBearer(opitions =>
+        opitions.TokenValidationParameters = new TokenValidationParameters {
             ValidateIssuer = true,
             ValidateAudience = true,
-            ValidateLifetime =  true,
+            ValidateLifetime = true,
             ValidAudience = builder.Configuration["TokenConfiguration:Audience"],
             ValidIssuer = builder.Configuration["TokenConfiguration:Issuer"],
             ValidateIssuerSigningKey = true,
             IssuerSigningKey = new SymmetricSecurityKey(
-                Encoding.UTF8.GetBytes(builder.Configuration["Jwt:key"])
+                Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"])
             )
         });
+
 // Add services to the container.
 
 builder.Services.AddControllers();
